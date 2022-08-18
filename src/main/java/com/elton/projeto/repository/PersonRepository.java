@@ -1,4 +1,4 @@
-package com.elton.projeto.repositories;
+package com.elton.projeto.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,4 +1,4 @@
-package com.elton.projeto.exceptions.handler;
+package com.elton.projeto.exception.handler;
 import java.util.Date;
 
 import org.springframework.http.HttpStatus;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.elton.projeto.exceptions.ExceptionResponse;
-import com.elton.projeto.exceptions.ResourceNotFoundException;
+import com.elton.projeto.exception.ExceptionResponse;
+import com.elton.projeto.exception.ResourceNotFoundException;
 
 @ControllerAdvice // annotation para concentrar tratamento em controllers
 @RestController
