@@ -15,7 +15,7 @@ import com.elton.projeto.serialization.converter.YamlJackson2HttpMessageConverte
 @EnableWebMvc
 public class WebConfig implements WebMvcConfigurer{
 	
-	private static final MediaType MEDIA_TYPE_YML = MediaType.valueOf("application/x-yaml");
+	private static final MediaType MEDIA_TYPE_APPLICATION_YML = MediaType.valueOf("application/x-yaml");
 	
 	public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
 		converters.add(new YamlJackson2HttpMessageConverter());
@@ -47,7 +47,7 @@ public class WebConfig implements WebMvcConfigurer{
 		.defaultContentType(MediaType.APPLICATION_JSON)
 		.mediaType("json", MediaType.APPLICATION_JSON)
 		.mediaType("xml", MediaType.APPLICATION_XML)
-		.mediaType("x-yaml", MEDIA_TYPE_YML);
+		.mediaType("x-yaml", MEDIA_TYPE_APPLICATION_YML);
 	}
 
 }
